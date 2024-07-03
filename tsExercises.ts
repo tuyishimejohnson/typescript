@@ -21,6 +21,4 @@ let val3:boolean = true
 let val4:undefined = undefined
 
 
-
-
 console.log(val1, val2)
