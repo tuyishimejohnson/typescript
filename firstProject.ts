@@ -19,7 +19,7 @@ function myParameters(para: number | string) {
     console.log(`This is the number ${para}`)
 }
 
-myParameters(2)
+myParameters("Johnson")
 
 
 // Creating functions in TS

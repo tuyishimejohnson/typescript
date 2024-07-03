@@ -12,7 +12,7 @@ console.log(obj);
 function myParameters(para) {
     console.log("This is the number ".concat(para));
 }
-myParameters(2);
+myParameters("Johnson");
 // Creating functions in TS
 function multiply(n) {
     return n * 2;
