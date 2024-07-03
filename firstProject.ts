@@ -31,3 +31,20 @@ function multiply(n:number){
 
 let ml = multiply(3) 
 console.log(ml)
+
+
+// Adding optional parameters in TS
+
+function mult(a:number, b:number, c?:number) {
+    return a * b + (c || 0)
+}
+
+console.log(mult(2, 4))
+
+// rest parameters 
+
+function add(n:number, b:number, ...rest:number[]) {
+    return n + b + rest.reduce((x, y) => x + y, 0)
+}
+
+console.log(add(1,3,45,6,7,8))
