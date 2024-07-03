@@ -48,3 +48,26 @@ function add(n:number, b:number, ...rest:number[]) {
 }
 
 console.log(add(1,3,45,6,7,8))
+
+
+
+interface Description {
+    name: string,
+    year: number,
+    model: string,
+    onSale: boolean
+}
+
+
+function car(): Description {
+    return {
+        name: "audi",
+        year: 2020,
+        model: "SUV",
+        onSale: true
+    }
+}
+
+let result = car()
+
+console.log(result.name)
