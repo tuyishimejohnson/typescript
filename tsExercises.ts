@@ -90,3 +90,16 @@ myobject  = {
 
 
 console.log(myobject.firstName)
+
+
+/* Write a TypeScript program that declares an array of a specific data type. It will demonstrates common array operations like adding elements, removing elements, and iterating through the array. */
+
+let newArray: number[] = [1,3,4,56,39, 70,2,4,60]
+
+let newVal = newArray.filter(number => number % 2 !== 0)
+let sum = newArray.reduce((a, b) => a + b, 0)
+let multi = newArray.reduce((a, b) => a * b, 1)
+
+console.log(multi)
+console.log(newVal)
+console.log(sum)
