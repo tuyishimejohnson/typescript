@@ -71,3 +71,42 @@ function car(): Description {
 let result = car()
 
 console.log(result.name)
+
+
+const xa = (val:number) => val ** 2
+
+console.log(xa(8))
+
+
+let n = 3
+console.log(n)
+
+let Car:object;
+
+// Creating objects in typescript
+Car = {
+    name: "Lamborghini",
+    model: "SUV",
+    year: 2024,
+    type: "Electric Vehicle"
+}
+
+console.log(Car);
+
+let z: (string | number)[] = []
+
+z.push("Alain", "Johnson", "MP", "Annick", 4, 6)
+
+console.log(z)
+
+
+type x = string;
+
+let myStr:x = "Johnson";
+
+console.log(myStr)
+
+
+
+
+

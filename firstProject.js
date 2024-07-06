@@ -33,3 +33,25 @@ function add(n, b) {
     return n + b + rest.reduce(function (x, y) { return x + y; }, 0);
 }
 console.log(add(1, 3, 45, 6, 7, 8));
+function car() {
+    return {
+        name: "audi",
+        year: 2020,
+        model: "SUV",
+        onSale: true
+    };
+}
+var result = car();
+console.log(result.name);
+var xa = function (val) { return Math.pow(val, 2); };
+console.log(xa(8));
+var n = 3;
+console.log(n);
+var Car;
+Car = {
+    name: "Lamborghini",
+    model: "SUV",
+    year: 2024,
+    type: "Electric Vehicle"
+};
+console.log(Car);

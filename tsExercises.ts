@@ -22,3 +22,26 @@ let val4:undefined = undefined
 
 
 console.log(val1, val2)
+
+
+/*  Write a TypeScript program that defines an enumeration 'Color' with values 'Red', 'Green', 'White' and Blue. Create a variable 'selectedColor' of type 'Color' and assign it one of the enumeration values.  */
+
+enum Color {
+    Red,
+    Green,
+    White,
+    Blue
+}
+
+
+let selectColor = Color.Blue
+
+console.log(selectColor)
+
+
+let i = 0
+for(; ;) {
+    console.log(i+1);
+    i++;
+    if(i >= 10) break;
+}
