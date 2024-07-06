@@ -87,6 +87,8 @@ const pers = new Person("Johnson", "Tuyishime")
 console.log(pers.getNames())
 
 
+/* 3. Write a TypeScript program that declares variables of the following data types: number, string, boolean, and undefined. Assign values to them and perform basic operations. */
+
 let num1:number = 10
 let mystr: string = "The Gym"
 let v: boolean = false
