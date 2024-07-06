@@ -55,8 +55,14 @@ console.log(total)
 
 console.log(mystr + " is with me!")
 
+/* Write a TypeScript program that converts a variable of one type to another using type assertions and type conversion functions like parseInt(). */
+
+
 let vue = "304"
 console.log(parseInt(vue))
+
+
+/*  Write a TypeScript program that creates type aliases for complex data types such as objects or custom types. Use them to define variables and explain how they improve code readability. */
 
 type a = string | number;
 
