@@ -107,6 +107,59 @@ let myStr:x = "Johnson";
 console.log(myStr)
 
 
+// Using for loop
+
+let i = 0
+for(; ;) {
+    console.log(i+1);
+    i++;
+    if(i >= 10) break;
+}
 
 
 
+// Optional parameters in a function 
+
+function adds(a:number, b:number, c?:number):number {
+
+    if(typeof c !== "undefined") {
+        return a + b + c;
+    } else {
+        return a + b
+    }
+    
+}
+
+
+console.log(adds(10, 20))
+
+
+// Rest parameters in a function
+
+function restParams(...numbers:number[]):number {
+    return numbers.reduce((acc, num) => acc + num, 0)
+}
+
+
+console.log(restParams(1,2,3))
+
+
+// Classes in TS
+
+class Person {
+    firstName:string;
+    lastName:string;
+    constructor(firstName:string, lastName:string) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+
+    getNames(): string {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+
+
+const pers = new Person("Johnson", "Tuyishime")
+console.log(pers.getNames())

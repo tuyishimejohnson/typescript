@@ -39,52 +39,6 @@ let selectColor = Color.Blue
 console.log(selectColor)
 
 
-/* let i = 0
-for(; ;) {
-    console.log(i+1);
-    i++;
-    if(i >= 10) break;
-}
- */
-
-function add(a:number, b:number, c?:number):number {
-
-    if(typeof c !== "undefined") {
-        return a + b + c;
-    } else {
-        return a + b
-    }
-    
-}
-
-
-console.log(add(10, 20))
-
-
-function restParams(...numbers:number[]):number {
-    return numbers.reduce((acc, num) => acc + num, 0)
-}
-
-
-console.log(restParams(1,2,3))
-
-class Person {
-    firstName:string;
-    lastName:string;
-    constructor(firstName:string, lastName:string) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
-
-    getNames(): string {
-        return `${this.firstName} ${this.lastName}`
-    }
-}
-
-
-const pers = new Person("Johnson", "Tuyishime")
-console.log(pers.getNames())
 
 
 /* 3. Write a TypeScript program that declares variables of the following data types: number, string, boolean, and undefined. Assign values to them and perform basic operations. */
