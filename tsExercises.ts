@@ -39,9 +39,92 @@ let selectColor = Color.Blue
 console.log(selectColor)
 
 
-let i = 0
+/* let i = 0
 for(; ;) {
     console.log(i+1);
     i++;
     if(i >= 10) break;
 }
+ */
+
+function add(a:number, b:number, c?:number):number {
+
+    if(typeof c !== "undefined") {
+        return a + b + c;
+    } else {
+        return a + b
+    }
+    
+}
+
+
+console.log(add(10, 20))
+
+
+function restParams(...numbers:number[]):number {
+    return numbers.reduce((acc, num) => acc + num, 0)
+}
+
+
+console.log(restParams(1,2,3))
+
+class Person {
+    firstName:string;
+    lastName:string;
+    constructor(firstName:string, lastName:string) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+
+    getNames(): string {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+
+
+const pers = new Person("Johnson", "Tuyishime")
+console.log(pers.getNames())
+
+
+let num1:number = 10
+let mystr: string = "The Gym"
+let v: boolean = false
+let u: undefined = undefined
+
+let num2: number = 20
+
+const total:number = num1 + num2
+console.log(total)
+
+console.log(mystr + " is with me!")
+
+let vue = "304"
+console.log(parseInt(vue))
+
+type a = string | number;
+
+let uv : a
+uv = 2
+console.log(uv)
+
+type myobject = string | number | boolean;
+
+
+let myobject : {
+    firstName: string,
+    lastName: string,
+    age: number,
+    retired: boolean
+}
+
+
+myobject  = {
+    firstName: "Johnson",
+    lastName: "Tuyishime",
+    age: 22,
+    retired: false
+}
+
+
+console.log(myobject.firstName)
