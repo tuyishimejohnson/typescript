@@ -103,3 +103,14 @@ let multi = newArray.reduce((a, b) => a * b, 1)
 console.log(multi)
 console.log(newVal)
 console.log(sum)
+
+
+/* Write a TypeScript program that declares a variable 'result' that can hold either a 'string' or a 'number'. Now write a function that takes an argument of type 'string | number | boolean' and logs its type. */
+
+let result1 : string | number;
+
+function takeArg(a:string | number | boolean): void {
+    console.log(typeof a)
+}
+
+takeArg(true)
