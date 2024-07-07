@@ -163,3 +163,26 @@ class Person {
 
 const pers = new Person("Johnson", "Tuyishime")
 console.log(pers.getNames())
+
+
+// Intersections in TS
+// Interfaces in TS
+
+interface Person {
+    firstName: string,
+    lastName: string,
+    age: number
+}
+
+let xp: object
+
+xp = {
+    firstName:"Johnson",
+    lastName: "Tuyishime",
+    age: 22
+}
+
+
+function data(xp:Person) {
+    return xp.firstName + " " + xp.lastName
+} 
