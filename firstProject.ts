@@ -186,3 +186,11 @@ xp = {
 function data(xp:Person) {
     return xp.firstName + " " + xp.lastName
 } 
+
+function getRandom<T>(items: T[]):T {
+    let x = Math.floor(Math.random() * items.length)
+
+    return items[x]
+}
+
+console.log(getRandom<number>([1, 5, 7, 4, 2, 9]))
