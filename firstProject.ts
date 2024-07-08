@@ -194,3 +194,23 @@ function getRandom<T>(items: T[]):T {
 }
 
 console.log(getRandom<number>([1, 5, 7, 4, 2, 9]))
+
+function mygGeneric<T>(x:T):T{
+    return x
+}
+
+let cd = mygGeneric<string>("Hello")
+
+
+console.log(cd)
+
+
+function anotherGen<T extends number, U extends number>(first:T, second: U) {
+    
+    return first + second
+}
+
+let ou = anotherGen<number, number>(10,3)
+console.log(ou)
+
+

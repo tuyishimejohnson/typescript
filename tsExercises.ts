@@ -141,3 +141,34 @@ type Bus = {
 }
 
 type Vehicle = Car | Bus
+
+
+/* Write a TypeScript program that declares a variable 'result' that can hold either a 'string' or a 'number'. Now write a function that takes an argument of type 'string | number | boolean' and logs its type. */
+
+
+type result = string | number;
+
+function takeType(varx:result | boolean) {
+    return typeof varx
+}
+
+console.log(takeType(23))
+
+
+
+/* Write a TypeScript program that declares an array containing both numbers and strings. Use type assertions to extract number, string and boolean values from the array. */
+
+function myCount<T, U, V>(arg: (string | boolean | number)[]):T[] {
+    
+
+    let str: string[] = arg.filter(item => typeof item === "string")
+    let bool: boolean[] = arg.filter(item => typeof item === "boolean")
+    let num: number[] = arg.filter(item => typeof item === "number")
+
+
+    return typeof arg === "string" ? str :
+            typeof arg === "number" ? num :
+            typeof arg === "boolean" ? bool : arg
+}
+
+console.log(myCount<number, string, boolean>(["johnson", true, "x", 34,  "type", 30, false]))
