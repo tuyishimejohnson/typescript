@@ -158,17 +158,25 @@ console.log(takeType(23))
 
 /* Write a TypeScript program that declares an array containing both numbers and strings. Use type assertions to extract number, string and boolean values from the array. */
 
-function myCount<T, U, V>(arg: (string | boolean | number)[]):T[] {
+function myCount(arg: (string | boolean | number)[]) {
     
 
     let str: string[] = arg.filter(item => typeof item === "string")
     let bool: boolean[] = arg.filter(item => typeof item === "boolean")
     let num: number[] = arg.filter(item => typeof item === "number")
 
-
-    return typeof arg === "string" ? str :
-            typeof arg === "number" ? num :
-            typeof arg === "boolean" ? bool : arg
+    
+    return {str, bool, num}
 }
 
-console.log(myCount<number, string, boolean>(["johnson", true, "x", 34,  "type", 30, false]))
+console.log(myCount(["johnson", true, "x", 34,  "type", 30, false]))
+
+
+/*  Write a TypeScript program that declares a variable as type any and uses a type assertion to explicitly cast it to type string.  */
+
+let variable: any = "30"
+
+let ux: string = <string>variable
+
+console.log(typeof ux)
+
