@@ -180,3 +180,22 @@ let ux: string = <string>variable
 
 console.log(typeof ux)
 
+
+/*  Write a TypeScript function that accepts a parameter of type string | string[] and returns the length of the input string. It also returns the sum of the lengths of all strings in the array. Use type assertions to let TypeScript know the parameter type.  */
+
+function fx(arg: string | string[]): number {
+    let count: number = 0
+    if(typeof arg === "string") {
+        return (arg as string).length
+    }
+
+    else {
+        arg.forEach(item => {
+            count += (item as string).length
+        })
+
+        return count
+    }
+}
+
+console.log(fx(["Coding", "TypeScript", "Exercise"]))
