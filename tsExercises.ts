@@ -199,3 +199,13 @@ function fx(arg: string | string[]): number {
 }
 
 console.log(fx(["Coding", "TypeScript", "Exercise"]))
+
+
+/* Write a TypeScript generic function that accepts an argument of any type and returns the same value. Test the function with various data types. */
+
+function myGen<T>(arg: T): T {
+    return arg
+}
+
+
+console.log(myGen(typeof "x"))
