@@ -218,8 +218,8 @@ myT = [112, 112, true]
 myT.push(false)
 console.log(myT)
 
-let arr: string[] = []
-arr.push("Johnson", "Jakdf", "sfkaldfe")
+let arr: (string | number)[] = []
+arr.push(34, 23, 405, "Johnson", "Jakdf", "sfkaldfe")
 console.log(arr)
 
 
