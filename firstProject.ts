@@ -219,7 +219,8 @@ myT.push(false)
 console.log(myT)
 
 let arr: (string | number)[] = []
-arr.push(34, 23, 405, "Johnson", "Jakdf", "sfkaldfe")
+arr.push("Johnson", "Jakdf", "sfkaldfe")
+
 console.log(arr)
 
 
@@ -228,3 +229,5 @@ let xam: Array<number> = []
 xam.push(10, 304, 54, 2, 43)
 
 console.log(typeof xam, xam)
+
+
