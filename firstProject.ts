@@ -213,4 +213,18 @@ function anotherGen<T extends number, U extends number>(first:T, second: U) {
 let ou = anotherGen<number, number>(10,3)
 console.log(ou)
 
+let myT: [number, number, boolean]
+myT = [112, 112, true]
+myT.push(false)
+console.log(myT)
 
+let arr: string[] = []
+arr.push("Johnson", "Jakdf", "sfkaldfe")
+console.log(arr)
+
+
+let xam: Array<number> = []
+
+xam.push(10, 304, 54, 2, 43)
+
+console.log(typeof xam, xam)

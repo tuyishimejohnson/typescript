@@ -204,8 +204,18 @@ console.log(fx(["Coding", "TypeScript", "Exercise"]))
 /* Write a TypeScript generic function that accepts an argument of any type and returns the same value. Test the function with various data types. */
 
 function myGen<T>(arg: T): T {
+
     return arg
 }
 
-
 console.log(myGen(typeof "x"))
+
+/* Write a TypeScript generic function that accepts two arguments: an array of any type and two indices. The function should swap the elements at the specified indices and return the modified array. */
+
+function xwo<T>(arg: [T, V]): T {
+    [arg, arg1] = [arg1, arg]
+    
+    return [arg, arg1]
+}
+
+console.log(xwo<number>(12, 2))
