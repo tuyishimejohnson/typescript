@@ -210,12 +210,26 @@ function myGen<T>(arg: T): T {
 
 console.log(myGen(typeof "x"))
 
-/* Write a TypeScript generic function that accepts two arguments: an array of any type and two indices. The function should swap the elements at the specified indices and return the modified array. */
+/* 1. Write a TypeScript class called Bus with the properties make, model, and year. Implement a constructor that initializes these properties when a Bus object is created. */
 
-function xwo<T>(arg: [T, V]): T {
-    [arg, arg1] = [arg1, arg]
-    
-    return [arg, arg1]
+class Carf {
+    private make:string;
+    model: string;
+    year: number;
+
+    constructor(make:string, model:string, year:number) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+
+    meth() {
+        return `${this.make} ${this.model} ${this.year}`
+    }
+
 }
 
-console.log(xwo<number>(12, 2))
+const car1 = new Carf("this", "sfas", 30404)
+const car2= new Carf("sfda", "sdf", 304)
+const car3 = new Carf("thfsais", "sfsfas", 3)

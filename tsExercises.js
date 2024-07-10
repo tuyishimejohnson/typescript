@@ -12,3 +12,7 @@ var val2 = "Johnson";
 var val3 = true;
 var val4 = undefined;
 console.log(val1, val2);
+
+
+
+
