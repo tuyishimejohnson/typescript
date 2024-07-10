@@ -268,6 +268,8 @@ console.log(suv.checkIfItsOffroad())
 
 /* Write a TypeScript class that defines a base class Car with properties like make, model, and year, along with a start() method that prints a starting message. Now create a class called Engine with the properties horsepower and fuelType. Modify the Car class to include an instance of the Engine class as a property. Implement a method printCarDetails() in the Car class that prints both car and engine details. */
 
+// Here we are using the instance of the Engine class inside the Car class as its property.
+
 class Engine {
     horsePower: number;
     fuelType: string;
@@ -278,11 +280,7 @@ class Engine {
     }
 }
 
-
-
-
 class Car2 {
-    
     make:string
     model:string
     year:number
@@ -310,3 +308,9 @@ let engine = new Engine(1200, "EV")
 let car12 = new Car2("Audi", "A3", 2023, engine)
 
 console.log(car12.printCarDetails())
+
+/* Write a TypeScript program that creates a class called Student with properties name and class. Implement a constructor that initializes these properties when a Student object is created.  */
+
+class Student {
+
+}
