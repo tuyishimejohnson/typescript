@@ -312,5 +312,20 @@ console.log(car12.printCarDetails())
 /* Write a TypeScript program that creates a class called Student with properties name and class. Implement a constructor that initializes these properties when a Student object is created.  */
 
 class Student {
+    name:string
+    classOne: string
+
+    constructor(name:string, classOne:string) {
+        this.name = name
+        this.classOne = classOne
+    }
 
 }
+
+let s = new Student("ALU", "Year 2")
+
+console.log(s)
+
+
+/*  Write a TypeScript program that creates a class called Student with properties name and roll number. Add constructor overloading to support multiple ways of initializing a Student object. Implement one constructor that takes both name and roll number as parameters and another constructor that takes only name, assuming the roll number is unknown. */
+
