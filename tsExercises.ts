@@ -329,3 +329,21 @@ console.log(s)
 
 /*  Write a TypeScript program that creates a class called Student with properties name and roll number. Add constructor overloading to support multiple ways of initializing a Student object. Implement one constructor that takes both name and roll number as parameters and another constructor that takes only name, assuming the roll number is unknown. */
 
+/* class Student {
+    name: string
+    rollNumber: number | undefined;
+    
+    constructor(name:string, rollNumber: number) {
+        this.name = name;
+        this.rollNumber = rollNumber;
+
+    }
+
+    constructor(name:string, rollNumber?:number) {
+        this.name = name
+    }
+} */
+
+
+/* Write a TypeScript program that defines a TypeScript interface Car with properties make and model of type string. Create a type Bus with properties make and model of type string and an additional property payloadCapacity of type number. Now, create a type Vehicle that represents either a Car or a Truck using a union type.  */
+
