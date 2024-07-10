@@ -213,7 +213,7 @@ console.log(myGen(typeof "x"))
 /* 1. Write a TypeScript class called Bus with the properties make, model, and year. Implement a constructor that initializes these properties when a Bus object is created. */
 
 class Carf {
-    private make:string;
+    make:string;
     model: string;
     year: number;
 
@@ -223,9 +223,8 @@ class Carf {
         this.year = year;
     }
 
-
-    meth() {
-        return `${this.make} ${this.model} ${this.year}`
+    start() {
+        return `${this.make}, model ${this.model} version ${this.year} is starting`
     }
 
 }
@@ -233,3 +232,36 @@ class Carf {
 const car1 = new Carf("this", "sfas", 30404)
 const car2= new Carf("sfda", "sdf", 304)
 const car3 = new Carf("thfsais", "sfsfas", 3)
+
+console.log(car1.start())
+
+
+/* Write a TypeScript class called SUV (Sports Utility Vehicle) that extends the Car class. Add a property to represent whether the SUV is suitable for off-road driving. Implement a method that toggles off-road capability and prints a message accordingly. */
+
+class SUV extends Carf {
+    offRoad: boolean
+
+    constructor(make:string, model:string, year:number, offRoad:boolean = true) {
+        super(make, model, year)
+
+        this.offRoad = offRoad;
+    }
+
+    checkIfItsOffroad() {
+        if(this.offRoad) {
+            console.log("Vehicle is offroad.")
+        }
+
+        else {
+            console.log("The car is just for usual roads.")
+        }
+    }
+
+}
+
+
+let suv = new SUV("Mercedes-Benz", "Cross-Country", 2023, false)
+
+console.log(suv.start())
+
+console.log(suv.checkIfItsOffroad())
