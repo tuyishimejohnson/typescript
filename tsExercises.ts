@@ -300,12 +300,12 @@ class Car2 {
     }
 
     printCarDetails() {
-        console.log(`${this.make} ${this.model} ${this.year} ${this.engine}`)
+        console.log(`${this.make} ${this.model} ${this.year} ${this.engine.fuelType} ${this.engine.horsePower}`)
     }
 
 }
 
-let engine = new Engine(1200, "empty string")
+let engine = new Engine(1200, "EV")
 
 let car12 = new Car2("Audi", "A3", 2023, engine)
 
