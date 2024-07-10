@@ -265,3 +265,48 @@ let suv = new SUV("Mercedes-Benz", "Cross-Country", 2023, false)
 console.log(suv.start())
 
 console.log(suv.checkIfItsOffroad())
+
+/* Write a TypeScript class that defines a base class Car with properties like make, model, and year, along with a start() method that prints a starting message. Now create a class called Engine with the properties horsepower and fuelType. Modify the Car class to include an instance of the Engine class as a property. Implement a method printCarDetails() in the Car class that prints both car and engine details. */
+
+class Engine {
+    horsePower: number;
+    fuelType: string;
+
+    constructor(horsePower:number, fuelType: string) {
+        this.horsePower = horsePower;
+        this.fuelType = fuelType;
+    }
+}
+
+
+
+
+class Car2 {
+    
+    make:string
+    model:string
+    year:number
+    engine: Engine
+
+    constructor(make:string, model:string, year:number, engine: Engine) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.engine = engine
+    }
+
+    start() {
+        console.log(`${this.make} ${this.model} ${this.year}  is starting`)
+    }
+
+    printCarDetails() {
+        console.log(`${this.make} ${this.model} ${this.year} ${this.engine}`)
+    }
+
+}
+
+let engine = new Engine(1200, "empty string")
+
+let car12 = new Car2("Audi", "A3", 2023, engine)
+
+console.log(car12.printCarDetails())
