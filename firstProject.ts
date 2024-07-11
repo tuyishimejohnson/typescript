@@ -231,3 +231,15 @@ xam.push(10, 304, 54, 2, 43)
 console.log(typeof xam, xam)
 
 
+function overLoading(a:number):number;
+
+function overLoading(a:string):string;
+
+function overLoading(a:any): any {
+
+    console.log(a)
+}
+
+
+overLoading(3)
+
