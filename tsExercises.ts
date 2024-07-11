@@ -347,3 +347,30 @@ console.log(s)
 
 /* Write a TypeScript program that defines a TypeScript interface Car with properties make and model of type string. Create a type Bus with properties make and model of type string and an additional property payloadCapacity of type number. Now, create a type Vehicle that represents either a Car or a Truck using a union type.  */
 
+interface Car {
+    make:string;
+    model:string;
+}
+
+type Buses = {
+    make:string;
+    model:string;
+    payloadCapacity: number;
+}
+
+
+type Vehicled = Car | Buses
+
+/* Write a TypeScript function that takes an argument of type string | number. Inside the function, use a type guard to check whether the argument is a string or a number. Then, log the appropriate message accordingly.
+ */
+
+let thisArgument = (arg: string | number) => {
+    if(typeof arg === "number") {
+        console.log("The argument is a number")
+    } else if (typeof arg === "string") {
+        console.log("The argument is a string")
+    }
+}
+
+
+console.log(thisArgument("12"))
