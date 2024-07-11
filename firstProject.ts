@@ -243,3 +243,14 @@ function overLoading(a:any): any {
 
 overLoading(3)
 
+
+// Rest parameters
+
+function rest(arg1:string, ...arg2:string[]): string {
+    
+    return arg1 + " " + arg2.join("-")
+}
+
+
+console.log(rest("Kimon", "Shape", "Bottle", "Water"))
+
