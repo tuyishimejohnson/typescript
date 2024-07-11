@@ -387,4 +387,27 @@ console.log(isOdd(4))
 
 
 
+/* Write a TypeScript program that declares an array containing both numbers and strings. Use type assertions to extract number, string and boolean values from the array.  */
+
+let myArray = (arg: (number | string | boolean)[]): (number | string | boolean)[] => {
+    let newArray: (number | string | boolean)[] = []
+    arg.forEach(item  => {
+        if(typeof item === "number") {
+            newArray.push(item)
+        }
+        if(typeof item === "string") {
+            newArray.push(item)
+        }
+        if(typeof item === "boolean") {
+            newArray.push(item)
+        }
+
+})
+
+    
+    return newArray
+}
+
+console.log(myArray(["Johnson", 34, "Tuyishime", 56, true, "Michael", "Jessica", 342, false]))
+
 
