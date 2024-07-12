@@ -410,4 +410,30 @@ let myArray = (arg: (number | string | boolean)[]): (number | string | boolean)[
 
 console.log(myArray(["Johnson", 34, "Tuyishime", 56, true, "Michael", "Jessica", 342, false]))
 
+/* Write a TypeScript program that declares a variable as type any and uses a type assertion to explicitly cast it to type string. */
+
+let anyType:any = 3
+let stringVal: string = anyType as string
+console.log(typeof stringVal)
+
+
+/* Write a TypeScript function that accepts a parameter of type string | string[] and returns the length of the input string. It also returns the sum of the lengths of all strings in the array. Use type assertions to let TypeScript know the parameter type.*/
+
+function acceptParams(argument: string | string[]):string | number {
+    let thelength:number = argument.length
+
+    if(typeof argument === "object") {
+        argument.forEach(ele => {
+            console.log(ele.length)
+        });
+    }
+    
+    
+    return thelength
+}
+
+
+console.log(acceptParams(["strin", "sfasd", "sdfafda"]))
+
+
 

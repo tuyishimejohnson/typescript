@@ -247,10 +247,46 @@ overLoading(3)
 // Rest parameters
 
 function rest(arg1:string, ...arg2:string[]): string {
-    
+
     return arg1 + " " + arg2.join("-")
 }
 
 
 console.log(rest("Kimon", "Shape", "Bottle", "Water"))
 
+
+// Protected classes 
+
+class Protected {
+    prop1: string;
+    protected prop2: string;
+
+    constructor(prop1: string, prop2:string) {
+        this.prop1 = prop1
+        this.prop2 = prop2
+    }
+}
+
+
+class Protected2 extends Protected {
+    dep:string
+    
+    constructor(prop1: string,  prop2: string, dep:string) {
+        super(prop1, prop2)
+        this.dep = dep;
+    }
+}
+
+let newProp = new Protected2("Johnson", "Tuyishime", "Department4")
+console.log(newProp)
+
+
+
+let ag:unknown = 23;
+
+let someval: any = [1,2,3,4]
+if(typeof someval === "object") {
+    let Length: number = (<number>someval)
+    console.log(Length)
+    
+}
